@@ -193,7 +193,7 @@
 		background: #1b77ad url("images/mountian.jpeg") bottom left;
 		/*background-repeat: repeat-x;*/
 		height: 100%;
-		width: cover;
+		background-size: cover;
 		left: 0;
 		opacity: 1;
 		position: fixed;
