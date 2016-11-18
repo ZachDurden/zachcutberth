@@ -191,7 +191,7 @@
 	/* Set your background with this */
 
 		background: #1b77ad url("images/mountian.jpeg") bottom left;
-		background-repeat: repeat-x;
+		/*background-repeat: repeat-x;*/
 		height: 100%;
 		left: 0;
 		opacity: 1;
