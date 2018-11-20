@@ -192,7 +192,7 @@
 
 		background: #ffffff url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
-		height: cover;
+		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
