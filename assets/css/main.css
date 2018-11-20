@@ -265,7 +265,7 @@
 
 	#bg {
 		background-size: cover auto;
-		width: cover;
+		width: auto;
 	}
 
 /* Overlay */
