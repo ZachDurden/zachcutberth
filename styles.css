@@ -1,23 +1,25 @@
 body{
     background: #000;
-    cursor: none;
+	cursor: none;
+	margin: 0;
   }
   
-  svg{
-    height: 100px;
-    position: absolute;
-    filter: drop-shadow(0 0 10px #0fc);
-  }
-  
+@font-face {
+	font-family: TrueLies;
+		src: url(TrueLies.ttf) format('truetype');
+}
+
   .bg-video {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    display: block;
+    position: fixed;
   }
   
   .bg-video > video {
-    max-width: 100vw;
+	position: fixed;
+    bottom: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: .3;
   }
 
   /* Reset */
@@ -62,7 +64,7 @@ body{
 	}
 
 	p {
-		font-family: 'Exo', sans-serif;
+		font-family: 'TrueLies';
 	}
 
 /* Box Model */
@@ -76,9 +78,9 @@ body{
 /* Basic */
 
 	body, input, select, textarea {
-		color: #0fc;
-		font-family: 'Exo', sans-serif;
-		font-size: 15pt;
+		color: #d600ff;
+		font-family: TrueLies;
+		font-size: 22pt;
 	}
 
 	body {
@@ -367,18 +369,19 @@ body{
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -1em;
+		top: 2em;
 		vertical-align: middle;
 		width: 90%;
 	}
 
 		#header h1 {
       font-size: 5.7em;
-      opacity: 1;
+	  opacity: .9;
 		}
 
 		#header p {
 			font-size: 1.5em;
+			opacity: .9;
       margin: 0.75em 0 0.25em 0;
 		}
 
@@ -483,15 +486,17 @@ body{
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
+				opacity: .9;
 			}
 
 				#header nav a:before {
+					/*
 					-moz-transition: all 0.2s ease-in-out;
 					-webkit-transition: all 0.2s ease-in-out;
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #0fc;
+					border: solid 3px #d600ff;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -500,15 +505,16 @@ body{
 					text-align: center;
 					top: 0;
 					width: 2.5em;
+					*/
+					font-size: 2em;
 				}
 
 				#header nav a:hover {
-					font-size: 1.1em;
+					font-size: 1em;
 				}
 
-					#header nav a:hover:before {
-						background-color: rgba(255, 255, 255, 0.175);
-						color: #0fc;
+					#header nav a:hover:before {	
+						color: #d600ff;
 					}
 
 				#header nav a:active {
@@ -517,8 +523,7 @@ body{
 				}
 
 					#header nav a:active:before {
-						background-color: rgba(255, 255, 255, 0.35);
-						color: #0fc;
+						color: #d600ff;
 					}
 
 				#header nav a span {

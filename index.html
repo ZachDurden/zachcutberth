@@ -8,54 +8,10 @@
     <body>
         <div class="bg-black"></div>   
         <div class="bg-video">
-        <video autoplay loop muted>
-            <source src="lvoohk.mp4" type="video/mp4">
+        <video autoplay loop muted id="bg-video">
+            <source src="city1.mp4" type="video/mp4">
         </video>
         </div>
-        <svg width="304px" height="159px" viewBox="0 0 304 159">
-        <defs>
-            <polygon id="path-1" points="173.474609 0.23046875 0.578125 157.21875 228.759766 34.5800781 237.09375 48.6953125 0.578125 157.21875 303.46875 89.2109375 253.789062 43.8164062 237.09375 48.6953125 228.759766 34.5800781"></polygon>
-            <filter x="-2.3%" y="-2.0%" width="103.5%" height="105.1%" filterUnits="objectBoundingBox" id="filter-2">
-            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 1   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-            </filter>
-            <polyline id="path-3" points="265.675781 97.7929688 265.675781 114.275391 0.400390625 156.769531"></polyline>
-            <filter x="-1.1%" y="-5.1%" width="102.3%" height="110.2%" filterUnits="objectBoundingBox" id="filter-4">
-            <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 1   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-            </filter>
-            <path d="M10.703125,152.300781 L238.851562,47.4140625" id="path-5"></path>
-            <filter x="-2.9%" y="-10.1%" width="105.8%" height="113.5%" filterUnits="objectBoundingBox" id="filter-6">
-            <feMorphology radius="0.1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="-4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
-            <feOffset dx="0" dy="-4" in="shadowInner" result="shadowInner"></feOffset>
-            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
-            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 1   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-            </filter>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="paperairplane" transform="translate(152.000000, 80.000000) scale(-1, 1) translate(-152.000000, -80.000000) translate(0.000000, 1.000000)">
-            <g id="Path">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use stroke="#FFFFFF" stroke-width="1" xlink:href="#path-1"></use>
-            </g>
-            <g id="Path-2">
-                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
-                <use stroke="#FFFFFF" stroke-width="1" xlink:href="#path-3"></use>
-            </g>
-            <g id="Path-3">
-                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
-                <use stroke="#FFFFFF" stroke-width="0.2" xlink:href="#path-5"></use>
-            </g>
-            </g>
-        </g>
-        </svg>
         <div id="wrapper">
                 <div id="bg"></div>
                 <div id="overlay"></div>
@@ -63,8 +19,8 @@
     
                     <!-- Header -->
                         <header id="header">
-                            <h1>ZACH CUTBERTH</h1>
-                            <p>TECHNICAL SUPPORT ENGINEER &bull; PYTHON PROGRAMMER</p>
+                            <h1>Zach Cutberth</h1>
+                            <p>System Engineer &bull; Python Programmer</p>
                             <nav>
                                 <ul>
                                     <li><a href="https://drive.google.com/file/d/1UZfdfY2qLpx86bknOBWcHsJWVJgjZW0L/view?usp=sharing" class="far fa-file-pdf" target=_blank><span class="label">Resume</span></a></li>
@@ -75,21 +31,14 @@
                             </nav>
                         </header>
     
-                    <!-- Footer -->
-                        <!--
+                    <!-- Footer 
+                        
                         <footer id="footer">
                             <span class="copyright">&copy; Zach Cutberth 2016</span>
                         </footer>
-                        -->
+                    -->    
     
                 </div>
-            </div>            
-        <script>
-                let airplane = document.querySelector('svg');
-                document.addEventListener("mousemove", (e)=>{
-                    airplane.style.left = e.pageX-50;
-                    airplane.style.top = e.pageY;
-                });
-        </script>
+            </div>
     </body>
 </html>
