@@ -10,14 +10,13 @@ body{
 		src: url(TrueLies.ttf) format('truetype');
 }
 
-  .bg-video {
-    position: fixed;
-  }
-  
-  .bg-video > video {
+.bg-video > video {
 	position: fixed;
-	min-width: 100%;
-	min-height: 100%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
 	opacity: .3;
   }
 
@@ -539,11 +538,16 @@ body{
   /* Basic */
 
     body, input, select, textarea {
-      font-size: 12pt;
+      font-size: 17pt;
     }
 
-  
+	#header p {
+		font-size: 3em;
+	}
 
+	#header nav {
+		font-size: 1.5em;
+	  }
 /* Mobile */
 
 @media screen and (max-width: 736px) {
@@ -555,8 +559,16 @@ body{
     }
 
     body, input, select, textarea {
-	  font-size: 11pt;
-    }
+	  font-size: 12pt;
+	}
+	
+	#header p {
+		font-size: 5em;
+	  }
+
+	#header nav {
+	font-size: 1em;
+	}
 
   /* BG */
 
