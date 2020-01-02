@@ -1,5 +1,6 @@
 body{
-    background: #000;
+	background: #000;
+	background-position: center;
 	cursor: none;
 	margin: 0;
   }
@@ -15,8 +16,6 @@ body{
   
   .bg-video > video {
 	position: fixed;
-    bottom: 0;
-	right: 0;
 	min-width: 100%;
 	min-height: 100%;
 	opacity: .3;
@@ -552,17 +551,23 @@ body{
   /* Basic */
 
     body {
-      min-width: 320px;
+	  min-width: 320px;
     }
 
     body, input, select, textarea {
-      font-size: 11pt;
+	  font-size: 11pt;
     }
 
   /* BG */
 
    
 /* Header */
+
+.bg-video > video {
+	
+	
+	opacity: .3;
+  }
 
   #header h1 {
     font-size: 2.5em;
