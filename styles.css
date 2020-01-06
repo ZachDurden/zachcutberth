@@ -1,25 +1,3 @@
-body{
-	background: #000;
-	background-position: center;
-	cursor: none;
-	margin: 0;
-  }
-  
-@font-face {
-	font-family: TrueLies;
-		src: url(TrueLies.ttf) format('truetype');
-}
-
-.bg-video > video {
-	position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-	opacity: .3;
-  }
-
   /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -75,15 +53,32 @@ body{
 
 /* Basic */
 
+	body{
+		background: #000;
+		background-position: center;
+		cursor: none;
+		margin: 0;
+	}
+	
+	@font-face {
+		font-family: TrueLies;
+			src: url(TrueLies.ttf) format('truetype');
+	}
+
+	.bg-video > video {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		transform: translateX(calc((100% - 100vw) / 2));
+		opacity: .3;
+	}
+
 	body, input, select, textarea {
 		color: #d600ff;
 		font-family: TrueLies;
 		font-size: 22pt;
-	}
-
-	body {
-		background: #000;
-		overflow: hidden;
 	}
 
 		body.loading * {
@@ -103,10 +98,6 @@ body{
 		outline: 0;
 		text-decoration: none;
 	}
-
-		a:hover {
-			border-color: transparent;
-		}
 
 /* Icon */
 
@@ -128,62 +119,7 @@ body{
 			display: none;
 		}
 
-  /* Wrapper */
-
-	@-moz-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-webkit-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-ms-keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@keyframes wrapper {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	#wrapper {
-		-moz-animation: wrapper 3s forwards;
-		-webkit-animation: wrapper 3s forwards;
-		-ms-animation: wrapper 3s forwards;
-		animation: wrapper 3s forwards;
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-  /* Main */
+/* Main */
 
 	#main {
 		height: 100%;
@@ -203,7 +139,7 @@ body{
 			width: 1px;
 		}
 
-    /* Header */
+/* Header */
 
 	@-moz-keyframes header {
 		0% {
@@ -373,14 +309,14 @@ body{
 	}
 
 		#header h1 {
-      font-size: 5.7em;
-	  opacity: .9;
+      		font-size: 5.7em;
+	  		opacity: .9;
 		}
 
 		#header p {
 			font-size: 1.5em;
 			opacity: .9;
-      margin: 0.75em 0 0.25em 0;
+      		margin: 0.75em 0 0.25em 0;
 		}
 
 		#header nav {
@@ -409,120 +345,14 @@ body{
 				width: 5.35em;
 			}
 
-				#header nav li:nth-child(1) {
-					-moz-animation-delay: 2.5s;
-					-webkit-animation-delay: 2.5s;
-					-ms-animation-delay: 2.5s;
-					animation-delay: 2.5s;
-				}
-
-				#header nav li:nth-child(2) {
-					-moz-animation-delay: 2.75s;
-					-webkit-animation-delay: 2.75s;
-					-ms-animation-delay: 2.75s;
-					animation-delay: 2.75s;
-				}
-
-				#header nav li:nth-child(3) {
-					-moz-animation-delay: 3s;
-					-webkit-animation-delay: 3s;
-					-ms-animation-delay: 3s;
-					animation-delay: 3s;
-				}
-
-				#header nav li:nth-child(4) {
-					-moz-animation-delay: 3.25s;
-					-webkit-animation-delay: 3.25s;
-					-ms-animation-delay: 3.25s;
-					animation-delay: 3.25s;
-				}
-
-				#header nav li:nth-child(5) {
-					-moz-animation-delay: 3.5s;
-					-webkit-animation-delay: 3.5s;
-					-ms-animation-delay: 3.5s;
-					animation-delay: 3.5s;
-				}
-
-				#header nav li:nth-child(6) {
-					-moz-animation-delay: 3.75s;
-					-webkit-animation-delay: 3.75s;
-					-ms-animation-delay: 3.75s;
-					animation-delay: 3.75s;
-				}
-
-				#header nav li:nth-child(7) {
-					-moz-animation-delay: 4s;
-					-webkit-animation-delay: 4s;
-					-ms-animation-delay: 4s;
-					animation-delay: 4s;
-				}
-
-				#header nav li:nth-child(8) {
-					-moz-animation-delay: 4.25s;
-					-webkit-animation-delay: 4.25s;
-					-ms-animation-delay: 4.25s;
-					animation-delay: 4.25s;
-				}
-
-				#header nav li:nth-child(9) {
-					-moz-animation-delay: 4.5s;
-					-webkit-animation-delay: 4.5s;
-					-ms-animation-delay: 4.5s;
-					animation-delay: 4.5s;
-				}
-
-				#header nav li:nth-child(10) {
-					-moz-animation-delay: 4.75s;
-					-webkit-animation-delay: 4.75s;
-					-ms-animation-delay: 4.75s;
-					animation-delay: 4.75s;
-				}
-
 			#header nav a {
 				-webkit-tap-highlight-color: transparent;
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
 				opacity: .9;
+				font-size: 2em
 			}
-
-				#header nav a:before {
-					/*
-					-moz-transition: all 0.2s ease-in-out;
-					-webkit-transition: all 0.2s ease-in-out;
-					-ms-transition: all 0.2s ease-in-out;
-					transition: all 0.2s ease-in-out;
-					border-radius: 100%;
-					border: solid 3px #d600ff;
-					display: block;
-					font-size: 1.75em;
-					height: 2.5em;
-					line-height: 2.5em;
-					position: relative;
-					text-align: center;
-					top: 0;
-					width: 2.5em;
-					*/
-					font-size: 2em;
-				}
-
-				#header nav a:hover {
-					font-size: 1em;
-				}
-
-					#header nav a:hover:before {	
-						color: #d600ff;
-					}
-
-				#header nav a:active {
-					font-size: 0.95em;
-					background: none;
-				}
-
-					#header nav a:active:before {
-						color: #d600ff;
-					}
 
 				#header nav a span {
 					display: none;
@@ -542,75 +372,12 @@ body{
     }
 
 	#header p {
-		font-size: 2.5em;
+		font-size: 2.05em;
 	}
 
 	#header nav {
 		font-size: 1.5em;
-	  }
+	  } }
 /* Mobile */
 
-@media screen and (max-width: 736px) {
 
-  /* Basic */
-
-    body {
-	  min-width: 320px;
-    }
-
-    body, input, select, textarea {
-	  font-size: 12pt;
-	}
-	
-	#header p {
-		font-size: 5em;
-	  }
-
-	#header nav {
-	font-size: 1em;
-	}
-
-  /* BG */
-
-   
-/* Header */
-
-.bg-video > video {
-	
-	
-	opacity: .3;
-  }
-
-  #header h1 {
-    font-size: 2.5em;
-  }
-
-  #header p {
-    font-size: 1em;
-  }
-
-  #header nav {
-    font-size: 1em;
-  }
-
-    #header nav a:hover {
-      font-size: 1em;
-    }
-
-    #header nav a:active {
-      font-size: 1em;
-    } }
-
-/* Mobile (Portrait) */
-
-@media screen and (max-width: 480px) {
-
-  /* BG */
-
-  
-
-/* Header */
-
-  #header nav {
-    padding: 0 1em;
-  } }
